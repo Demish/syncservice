@@ -45,10 +45,10 @@ function returnData($data, $output=1) {
 		//saving generated xml file; 
 		// $result = $xml_data->asXML('/file/path/name.xml');
 		echo $xml_data->asXML();
-	} elseif($output==2) {
-		if(count($output)>0) echo $data[0];
-			else echo "";
-	}
+        } elseif($output==2) {
+                if(count($data)>0) echo $data[0];
+                        else echo "";
+        }
 }
 
 function getStrKey($arKeys) {
